@@ -1,7 +1,7 @@
 <div class="note" (mouseenter)="hovered = true" (mouseleave)="deleteHovered()">
-    <input *ngIf="edit" [(ngModel)]="note.titel" type="text">
+    <input *ngIf="edit" [(ngModel)]="note.title" type="text">
     <h3 *ngIf="!edit">
-        {{note.titel}}
+        {{note.title}}
     </h3>
     <textarea *ngIf="edit" [(ngModel)]="note.content"></textarea>
     <p *ngIf="!edit">
